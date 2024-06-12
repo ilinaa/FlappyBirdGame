@@ -48,7 +48,7 @@
             this.pipeDown.Name = "pipeDown";
             this.pipeDown.Size = new System.Drawing.Size(110, 180);
             this.pipeDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pipeDown.TabIndex = 0;
+            this.pipeDown.TabIndex = 1;
             this.pipeDown.TabStop = false;
             // 
             // pipeUp
@@ -58,7 +58,7 @@
             this.pipeUp.Name = "pipeUp";
             this.pipeUp.Size = new System.Drawing.Size(110, 231);
             this.pipeUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pipeUp.TabIndex = 1;
+            this.pipeUp.TabIndex = 0;
             this.pipeUp.TabStop = false;
             // 
             // ground
@@ -68,7 +68,7 @@
             this.ground.Name = "ground";
             this.ground.Size = new System.Drawing.Size(556, 70);
             this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ground.TabIndex = 2;
+            this.ground.TabIndex = 3;
             this.ground.TabStop = false;
             // 
             // bird
@@ -78,7 +78,7 @@
             this.bird.Name = "bird";
             this.bird.Size = new System.Drawing.Size(91, 75);
             this.bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bird.TabIndex = 3;
+            this.bird.TabIndex = 2;
             this.bird.TabStop = false;
             // 
             // Score
@@ -93,6 +93,7 @@
             // 
             // gameTimer
             // 
+            this.gameTimer.Enabled = true;
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
