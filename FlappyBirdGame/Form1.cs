@@ -13,7 +13,7 @@ namespace FlappyBirdGame
     public partial class Form1 : Form
     {
 
-        int pipeMovement = 8;
+        int pipeMovement = 7;
         int movement = 5;
         int score = 0;
 
@@ -45,7 +45,7 @@ namespace FlappyBirdGame
             bird.Top += movement;
             pipeDown.Left -= pipeMovement;
             pipeUp.Left -= pipeMovement;
-            Score.Text = "Score: " + score.ToString();
+            Score.Text = "Score: " + score;
 
 
             if(pipeDown.Left < -70)
@@ -58,6 +58,31 @@ namespace FlappyBirdGame
                 pipeUp.Left = 550;
                 score++;
             }
+            if (bird.Bounds.IntersectsWith(pipeDown.Bounds) ||
+                bird.Bounds.IntersectsWith(pipeUp.Bounds) ||
+                bird.Bounds.IntersectsWith(ground.Bounds) ||
+                bird.Top < -5 ) {
+
+                endGame();
+            }
+            if(score > 7)
+            {
+                pipeMovement = 12;
+            }
+            if (score > 20)
+            {
+                pipeMovement = 18;
+            }
+            if(bird.Top < -25)
+            {
+                endGame();
+            }
+
+        }
+        private void endGame()
+        {
+            gameTimer.Stop();
+            Score.Text += " Game over!";
         }
     }
 }

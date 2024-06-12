@@ -64,9 +64,9 @@
             // ground
             // 
             this.ground.Image = global::FlappyBirdGame.Properties.Resources.ground;
-            this.ground.Location = new System.Drawing.Point(-4, 560);
+            this.ground.Location = new System.Drawing.Point(-4, 524);
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(556, 70);
+            this.ground.Size = new System.Drawing.Size(562, 106);
             this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ground.TabIndex = 3;
             this.ground.TabStop = false;
@@ -84,8 +84,9 @@
             // Score
             // 
             this.Score.AutoSize = true;
+            this.Score.BackColor = System.Drawing.Color.Wheat;
             this.Score.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.Location = new System.Drawing.Point(24, 24);
+            this.Score.Location = new System.Drawing.Point(49, 555);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(151, 48);
             this.Score.TabIndex = 4;
